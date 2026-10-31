@@ -1,74 +1,112 @@
 <!DOCTYPE html>
+<!-- Phase 2: Navbar, hero and About -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subarna kandel - Portfolio </title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subarna Kandel – Leader, Entrepreneur, Technologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <header>
-        <h1>Subarna Kandel</h1>
-        <p>Leading communities with purpose, building the future in code.</p>
-        <p>Zonal Interact Representative, Zone 5 | Rotary Year 2026/27 | Interact District 3292</p>
-     </header>
-     <nav>
-     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#leadership">Leadership</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-     </ul>
-     </nav>
-     <main>
-        <section id="about">    
-            <h2>About me</h2>
-            <p>I am Subarna Kandel, a student leader and aspiring tech founder from Nepal.</p>    
-            <p>I served as Secretary of the Interact Club of Gorkha and now serve as Zonal Interact Representative of Zone 5. I am planning Zentobyte, a company for software, websites and coding education, and I help with digital and promotional work at Lumbini Smart School</p>
-        </section>
-        
-        <section id="leadership">
-            <h2>Leadership</h2>
-            <ul>
-                <li><strong>Zonal Interact Representative, Zone 5</strong>: Rotary Year 2026/27, Interact District 3292.</li>
-                <li><strong>Event Organizer</strong></li>
-                <li><strong>Fomer Secretary</strong>, Interact Club of Gorkha</li>
-            </ul>
-        </section>
 
-        <section id="Projects">
-            <h2>Projects</h2>
-            <h3>Zonal Sports Meet - Zone 5</h3>
-            <p>An inter-club sports event for Interactors in Zone 5, organized by me.</p>
-            <h3>Zentobyte</h3>
-            <p>A planned technology company for software, websites and coding eduction. I am founder and CEO.</p>
-            <h3>Lumbini Smart School</h3>
-            <p>Digital and promotional projects for the school.</p>
-        </section>
+<header id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#home" aria-label="Subarna Kandel, home"><i>SK</i>Subarna Kandel</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <ul class="links" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
 
-        <section id="skills">
-            <h2>Skills and interests</h2>
-            <ul>
-            <li>Technology: programming, web development, cybersecurity, coding education</li>
-            <li>Management: event management, team coordination, planning, entrepreneurship</li>
-            <li>Design: graphic design, promotional content</li>
-            <li>Leadership: Rotary and Interact, communication, community service</li>
-            </ul>
-            </section>
+<main>
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <div class="role"><b></b>Zonal Interact Representative, Zone 5 · 2026/27</div>
+      <h1>Subarna<span>Kandel</span></h1>
+      <p class="tag">Leading communities with purpose, building the future in code.</p>
+      <p class="lead">A young leader, entrepreneur, and technology enthusiast from Nepal, serving Interact District 3292 and building Zentobyte.</p>
+      <div class="btns">
+        <a class="btn p" href="#projects">View my work</a>
+        <a class="btn g" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="frame">
+        <!-- Add your photo: put your image URL or a data: URI in the src below -->
+        <img id="pf" alt="Portrait of Subarna Kandel" onerror="this.remove()" src="formal.jpeg">
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section id="contact">
-            <h2>Contacts</h2>
-            <ul>
-                <li>Email: subarnakandel21@gmail.com</li>
-                <li>Facebook: Subarna kdl</li>
-                <li>Instagram: Subarna.kdl</li>
-            </ul>
-        </section>
-     </main>
+<section class="about" id="about">
+  <div class="wrap two">
+    <div>
+      <h2>About me</h2>
+      <p class="lead">I'm Subarna Kandel, a student leader and aspiring tech founder from Nepal.</p>
+      <p>My journey started in service. I joined the Interact Club of Gorkha, where I served as Secretary, and learned how much a team can achieve when it organizes well and shows up for its community.</p>
+      <p>Today I serve as Zonal Interact Representative for Zone 5, while working toward a second path: building technology. I'm planning Zentobyte, a company for software, websites, and coding education, and I contribute to digital and promotional work at Lumbini Smart School.</p>
+      <p>I'm most interested where leadership and technology meet: events that run smoothly, tools that help people, and skills that are shared rather than kept.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Leadership</strong><span>Rotary and Interact service across Zone 5</span></div></div>
+      <div class="fact"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><div><strong>Technology</strong><span>Programming, websites, and cybersecurity</span></div></div>
+      <div class="fact"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg><div><strong>Entrepreneurship</strong><span>Founder of Zentobyte (in planning)</span></div></div>
+      <div class="fact"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18c1.5 0 2-1 1.5-2s0-2 1.5-2h2a3 3 0 003-3c0-6-4-11-8-11z"/><circle cx="8" cy="11" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16" cy="11" r="1"/></svg><div><strong>Design</strong><span>Graphic design and event promotion</span></div></div>
+    </div>
+  </div>
+</section>
 
-     <footer>
-        <p>© 2026 Subarna Kandel</p>
-     </footer>
+<section class="plain" id="leadership"><div class="wrap">
+<h2>Leadership</h2>
+<ul>
+<li><strong>Zonal Interact Representative, Zone 5</strong>: Rotary Year 2026/27, Interact District 3292.</li>
+<li><strong>Organizer, Zone 5 Zonal Sports Meet</strong>.</li>
+<li><strong>Former Secretary</strong>, Interact Club of Gorkha.</li>
+</ul>
+</div></section>
+
+<section class="plain" id="projects"><div class="wrap">
+<h2>Projects</h2>
+<h3>Zone 5 Zonal Sports Meet</h3>
+<p>An inter-club sports event for Interactors in Zone 5, organized by me.</p>
+<h3>Zentobyte</h3>
+<p>A planned technology company for software, websites and coding education. I am the founder and CEO.</p>
+<h3>Lumbini Smart School</h3>
+<p>Digital and promotional projects for the school.</p>
+</div></section>
+
+<section class="plain" id="skills"><div class="wrap">
+<h2>Skills and interests</h2>
+<ul>
+<li>Technology: programming, web development, cybersecurity, coding education</li>
+<li>Management: event management, team coordination, planning, entrepreneurship</li>
+<li>Design: graphic design, promotional content</li>
+<li>Leadership: Rotary and Interact, communication, community service</li>
+</ul>
+</div></section>
+
+<section class="plain" id="contact"><div class="wrap">
+<h2>Contact</h2>
+<p>Add your email and social links here.</p>
+<ul>
+<li>Email: subarnakandel21@gmail.com</li>
+<li>Facebook: Subarna kdl</li>
+<li>Instagram: Subarna.kdl</li>
+</ul>
+</div></section>
+</main>
+
+<footer class="plain-footer"><div class="wrap"><p>© 2026 Subarna Kandel</p></div></footer>
 </body>
-</html
+</html>
